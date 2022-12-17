@@ -1,0 +1,355 @@
+@font-face{
+    font-family: 'Baloo-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url(tipografias/Baloo-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'MavenPro-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url(tipografias/MavenPro-Medium.ttf);
+}
+
+@font-face{
+    font-family: 'Ubuntu-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url(tipografias/Ubuntu-Bold.ttf);
+}
+
+@font-face{
+    font-family: 'Ubuntu-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url(tipografias/Ubuntu-Regular.ttf);
+}
+@font-face{
+    font-family: 'Candara';
+    font-style: normal;
+    font-weight: normal;
+    src: url(tipografias/Candara.ttf);
+}
+@font-face{
+    font-family: 'Candara_Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url(tipografias/Candara.ttf);
+}
+/* ------------------------------- Efecto Fadein -------------------------- */
+
+.fade-in {
+    animation: fadeIn ease 4s;
+    -webkit-animation: fadeIn ease 4s;
+    -moz-animation: fadeIn ease 4s;
+    -o-animation: fadeIn ease 4s;
+    -ms-animation: fadeIn ease 4s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+/* ---------------------------------------- Style for navbar --------------------------- */
+
+   /* General style */
+body{
+    font-family: 'MavenPro-Medium';
+    background-color: rgb(241, 241, 241); 
+}
+
+hr{
+    border-top: 1px solid #f6c417!important;
+    margin: 0em;
+    padding: 0em;
+}
+
+
+
+.estitulo{color: rgb(39, 39, 39);}
+.quehacemos{color: rgb(39, 39, 39);}
+/* ----------------- Configuración de secciones ------------ */
+
+.alturasecciones{
+    height: 500px;
+
+}
+.imagenesseccion{
+    height: 50%;
+    width: auto;
+
+    animation: efectorotar ease 2s infinite;
+    -webkit-animation: efectorotar ease 2s infinite;
+    -moz-animation: efectorotar ease 2s infinite;
+    -o-animation: efectorotar ease 2s infinite;
+    -ms-animation: efectorotar ease 2s infinite;
+}
+
+.imagenesseccion:hover{
+    
+    animation-play-state: paused;
+}
+/* ------------------- Efecto de imagenes -------------------------- */
+
+@keyframes efectorotar{
+
+    0% {height: 50%;}
+    50%{height: 48%;}
+    100% {height: 50%;}
+}
+
+@-webkit-keyframes efectorotar{
+    0% {height: 50%;}
+    50%{height: 40%;}
+    100% {height: 50%;}
+}
+
+.explicacionseccion{
+    padding-top: 5em;
+}
+
+.destacado{
+    color: rgb(0, 81, 85);
+}
+
+/* ------------------- Fin secciones -------------- */
+.estitulo{
+    font-family: 'Candara_Bold'!important;
+}
+
+.estitulo{color: rgb(39, 39, 39);}
+.quehacemos{color: rgb(39, 39, 39);}
+
+.estituloreg{
+    font-family: 'Candara_Bold'!important;
+}
+
+.estitubar{
+    font-family: 'MavenPro-Medium';
+    padding-right: 0.5em;
+    color: white;
+}
+
+.imgmobile{
+    height: 30px;
+    margin: 0.2em;
+}
+
+
+/* ------------------- Fin de Efecto de imagenes -------------------------- */
+
+
+
+.navbar{background-color: #541920!important;}
+
+
+
+@media (min-width: 2048px) and (max-width:3840px)
+{
+    .navbar{background-color: #541920!important;}
+    .navbar-brand{width: 30%;}
+    .logohori{width: 70%;padding-left: 5em;}
+
+    h1{font-size: 2em!important;}
+    h2{font-size: 1.2em!important;}
+    h3{font-size: 1.5em!important;}
+    h5{font-size: 1em!important;}
+ 
+}
+
+@media (min-width: 1920px) and (max-width:2048px)
+{
+    h1{font-size: 2em!important;}
+    h2{font-size: 1.2em!important;}
+    h3{font-size: 1.5em!important;}
+    h5{font-size: 1em!important;}
+
+    .navbar{background-color: #541920!important;}
+    .navbar-brand{width: 30%;}
+    .logohori{width: 80%;padding-left: 5em;}
+
+
+}
+
+@media (min-width: 1024px) and (max-width:1920px)
+{
+    .navbar{background-color: #541920!important;}
+    .navbar-brand{width: 30%;}
+    .logohori{width: 70%;padding-left: 1em;}
+
+    h1{font-size: 2em!important;}
+    h2{font-size: 1.2em!important;}
+    h3{font-size: 1.5em!important;}
+    h5{font-size: 1em!important;}
+
+}
+@media (min-width: 992px) and (max-width:1024px) {
+  
+    .navbar-brand{width: 30%;}
+    .logohori{width: 100%!important;padding-left: 0em!important;}
+
+    h1{font-size: 2em!important;}
+    h2{font-size: 1.5em!important;}
+    h3{font-size: 1.2em!important;}
+    h5{font-size: 0.85em!important;}
+
+    .imagenesseccion{
+        height: 40%!important;
+        width: auto;
+    }
+    
+    .explicacionseccion{
+        padding-top: 4em;
+    }
+
+  
+}
+
+@media (min-width: 720px) and (max-width:991px) {
+   
+    .navbar-brand{width: 30%;}
+    .logohori{width: 90%;padding-left: 0em;}
+
+    h1{font-size: 1.5em!important;}
+    h2{font-size: 1.5em!important;}
+    h3{font-size: 1.2em!important;}
+    h5{font-size: 0.95em!important;}
+
+    .imagenesseccion{
+        height: 20%;
+        width: auto;
+    }
+    
+    .explicacionseccion{
+        padding-top: 3em;
+    }
+
+
+}
+
+@media (min-width: 592px) and (max-width:720px) {
+
+
+    .navbar-brand{width: 30%;}
+    .logohori{width: 100%;padding-left: 0em;}
+
+    h1{font-size: 1.5em!important;}
+    h2{font-size: 1.5em!important;}
+    h3{font-size: 1.3em!important;}
+    h5{font-size: 0.95em!important;}
+    .imagenesseccion{
+        height: 35%!important;
+        width: auto;
+    }
+    
+    .explicacionseccion{
+        padding-top: 2em;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width:592px) {
+   
+    .navbar-brand{width: 30%;}
+    .logohori{width: 100%;padding-left: 0em;}
+
+    h1{font-size: 2em!important;}
+    h2{font-size: 1.7em!important;}
+    h3{font-size: 1.5em!important;}
+    h5{font-size: 1.5em!important;}
+
+    .imagenesseccion{
+        height: 35%!important;
+        width: auto;
+    }
+    
+    .explicacionseccion{
+        padding-top: 2em;
+    }
+    .estitubar{
+        color: black!important;
+    }
+}
+
+@media (min-width: 375px) and (max-width:576px) {
+   
+    .alturasecciones{
+        height: 320px;
+    
+    }
+    .navbar-brand{width: 30%;}
+    .logohori{width: 100%;padding-left: 0em;
+    
+    }
+
+    h1{font-size: 1.5em!important;}
+    h2{font-size: 1.5em!important;}
+    h3{font-size: 1.3em!important;}
+
+    .imagenesseccion{
+        height: 35%;
+        width: auto;
+    }
+    
+    .explicacionseccion{
+        padding-top: 0em;
+        margin: 2em;
+    }
+    .columna{
+        display: none;
+    }
+
+
+}
+
+@media (min-width: 20px) and (max-width:375px) {
+    
+    .alturasecciones{
+        height: 350px;
+    
+    }
+    .navbar-brand{width: 30%;}
+    .logohori{width: 150%;padding-left: 0em!important;
+    
+    }
+
+    h1{font-size: 1.5em!important;}
+    h2{font-size: 1.5em!important;}
+    h3{font-size: 1.3em!important;}
+
+    .imagenesseccion{
+        height: 35%;
+        width: auto;
+    }
+    
+    .explicacionseccion{
+        padding-top: 0em;
+        margin: 2em;
+    }
+    .columna{
+        display: none;
+    }
+
+}
+

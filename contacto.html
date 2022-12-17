@@ -1,0 +1,125 @@
+<style>
+    
+</style>
+
+	<div id="seccioncontacto" class="container  ">
+		<div class="d-flex justify-content-center" style="padding-top: 2em;">
+			<div><h5><img src="img/icono_persona.svg" alt="" style="height: 30px;">Contacto: Alejandro Marchena</h5></div>
+		</div>
+	</div>
+	<div  style="text-align: center;">
+		<div><a href="https://wa.me/5492613408918" target="_blank" style="color: black;"><h5 class="center"><img src="img/icono_whatsapp.svg" alt="" style="height: 30px;">+54 9 261 3408 918</h5></a></div>
+	</div>
+	<div class="d-flex justify-content-center" style="padding: 1.5em;">
+		<div><h5><img src="img/icono_mensajes.svg" alt="" style="height: 30px;">Dejanos tu mensaje</h5></div>
+	</div>
+	<br>
+	<div class="d-flex justify-content-center alturaseccioncontacto">
+		
+		<form>
+			<div class="form-group">
+				<i class="material-icons prefix">account_circle</i>
+				<input id="nombre" type="text" class="validate" placeholder="Nombre y Apellido">
+			</div>
+			<div class="form-group">
+				<i class="material-icons prefix">call</i>
+				<input id="telefono" type="tel" class="validate" placeholder="Whatsapp">
+			</div>
+			<div class="form-group">
+				<i class="material-icons prefix">email</i>
+				<input id="email" type="email" class="validate" placeholder="email">
+			</div>
+			<div class="form-group">
+				<label for="mensaje">Mensaje</label>
+				<textarea class="form-control" id="mensaje" rows="3"></textarea>
+			</div>
+			<div class="d-flex justify-content-center">
+				<p id="aclaracion"></p>
+			</div>
+			<div class="d-flex justify-content-center">
+
+				<button id="enviar" class="btn btn-info" onclick="Enviar(event)">Enviar</a>
+			</div>
+			<div id="footer" class="d-flex justify-content-center" ><br><p class="teba">     TemplayStudios™ 2023     </p></div>
+	  		<div class="d-flex justify-content-center"><br><p id="resolucion" style="color: grey!important;font-size: 0.5em;"></p></div>
+			
+		</form>
+	</div>
+</div>
+
+<script>
+	
+const aclaracion 	= document.getElementById("aclaracion");
+const nombre 		= document.getElementById("nombre");
+const email 		= document.getElementById("email");
+const telefono 		= document.getElementById("telefono");
+const mensaje 		= document.getElementById("mensaje");
+const enviar 		= document.getElementById("enviar");
+
+function Verificar()
+{
+	let res=true;
+	if(nombre.value == "" && res ==true){
+		aclaracion.innerHTML = 'Por favor escriba su nombre';
+		res=false;
+	}
+	
+	if (telefono.value == "" && res ==true) {
+		aclaracion.innerHTML = 'Por favor escriba su teléfono';
+		res=false;
+	}
+	
+	if (email.value == "" && res ==true) {
+		aclaracion.innerHTML = 'Por favor escriba su email';
+		res=false;
+	}
+
+
+	if (mensaje.value == "" && res == true)	{
+		aclaracion.innerHTML ='Por favor escriba un mensaje';
+		res=false;
+	}
+
+	return res;
+}
+
+function Enviar(e)
+{
+	e.preventDefault();
+
+	if(Verificar())
+	{
+		enviar.disabled = true;
+		aclaracion.innerHTML ='Enviando...';
+		
+		setTimeout(() => {
+			$.ajax({
+				url: "enviarcorreo.php",
+				
+				data: { nya: nombre.value, email: email.value, telefono: telefono.value, mensaje: mensaje.value },
+				type: "post",
+				success: function (data) 
+				{
+					enviar.disabled = false;
+
+					aclaracion.innerHTML ='Mensaje enviado!';
+					nombre.value 	= "";
+					email.value 	= "";
+					telefono.value 	= "";
+					mensaje.value 	= "";
+					
+				},error: function(e){
+					aclaracion.innerHTML = 'Error al Enviar el mensaje';
+					enviar.disabled = false;
+					console.log(e)
+
+				}
+			
+			});
+		}, 500);
+			
+	}
+}
+	
+
+</script>

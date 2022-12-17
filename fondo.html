@@ -1,0 +1,118 @@
+<style>
+#contienefondo{
+    height: 615px;
+    padding-top: 15em;
+    /* background-image:  url("img/ondarosa.png");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    opacity: 0;
+}
+
+.icofondo{
+    height: 100px;
+    width: auto;
+}
+.centrado{
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 2048px) and (max-width:3840px)
+{
+    #contienefondo{height: 450px;
+        padding-top: 12em;
+    }
+}
+
+@media (min-width: 1920px) and (max-width:2048px) {
+    #contienefondo{height: 450px;
+        padding-top: 12em;
+    }
+}
+
+@media (min-width: 1024px) and (max-width:1920px) {
+    #contienefondo{height: 450px;
+        padding-top: 10em;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1024px) {
+    #contienefondo{height: 450px;
+        padding-top: 10em;
+    }
+}
+
+@media (min-width: 720px) and (max-width:992px) {
+    .iconosweb{display: none;}
+    #contienefondo{height: 150px;padding-top: 0em;
+    }
+}
+
+@media (min-width: 592px) and (max-width:720px) {
+    .iconosweb{display: none;}
+    #contienefondo{
+        height: 150px!important;
+        padding-top: 0em;}
+}
+
+@media (min-width: 576px) and (max-width:592px) {
+    .iconosweb{display: none;}
+    #contienefondo{
+        background-image:  url("");
+        height: 250px;
+        padding-top: 10em;
+    
+    }
+}
+
+@media (min-width: 375px) and (max-width:576px) {
+    .iconosweb{display: none;}
+    #contienefondo{height: 215px;
+        padding-top: 8em;
+    }
+}
+
+@media (min-width: 20px) and (max-width:375px) {
+    .iconosweb{display: none;}
+    #contienefondo{height: 215px;
+        padding-top: 8em;
+    }
+}
+
+</style>
+<div id="contienefondo" >
+    <div class="row justify-content-center">
+        <h1 class="estitulo">SOFTWARE A SU MEDIDA</h1>
+    </div>
+    <div class="row justify-content-center">
+
+        <h5 class="quehacemos" style="text-align: center;">Desarrollo y capacitación</h5>
+    </div>
+    <br>
+    <div  class="row iconosweb">
+        <div class="col-sm-2 centrado">
+            <a href="#"  onclick="Click('barra',300,'hosting',AlturaBarra() ,'hosti')"><img id="imahost" src="./img/Hosting.png" class="icofondo" alt=""></a>
+            <h5 class="centrado quehacemos">Hosting</h5>
+        </div>
+        <div class="col-sm-2 centrado">
+            <a href="#" onclick="Click('barra',300,'programacion',AlturaBarra(),'progra')" ><img id="imaprogra" src="./img/Programacion.png" class="icofondo" alt=""></a>
+            <h5 class="centrado quehacemos">Programación</h5>
+        </div>
+        <div class="col-sm-2 centrado">
+            <a href="#" onclick="Click('barra',300,'disenio',AlturaBarra(),'disen')"><img id="imadise" src="./img/Design.png" class="icofondo" alt=""></a>
+            <h5 class="centrado quehacemos">Diseño</h5>
+        </div>
+        <div class="col-sm-2 centrado">
+            <a href="#" onclick="Click('barra',300,'web',AlturaBarra(),'webb')"><img id="imaweb" src="./img/Web.png" class="icofondo" alt=""></a>
+            <h5 class="centrado quehacemos">Web</h5>
+        </div>
+        <div class="col-sm-2 centrado">
+            <a href="#" onclick="Click('barra',300,'capacitaciones',AlturaBarra(),'capac')"><img id="imacapa" src="./img/Capacitacion.png" class="icofondo" alt=""></a>
+            <h5 class="centrado quehacemos">Capacitación</h5>
+        </div>
+        <div class="col-sm-2 centrado">
+            <a href="#" onclick="Click('barra',300,'videojuegos',AlturaBarra(),'videoj')"><img id="imavideoj" src="./img/Videojuego.png" class="icofondo" alt=""></a>
+            <h5 class="centrado quehacemos">Videojuegos</h5>
+        </div>
+    </div>
+</div>
