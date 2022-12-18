@@ -91,10 +91,7 @@ hr{
 .quehacemos{color: rgb(39, 39, 39);}
 /* ----------------- Configuración de secciones ------------ */
 
-.alturasecciones{
-    height: 500px;
 
-}
 .imagenesseccion{
     height: 50%;
     width: auto;
@@ -125,9 +122,7 @@ hr{
     100% {height: 50%;}
 }
 
-.explicacionseccion{
-    padding-top: 5em;
-}
+
 
 .destacado{
     color: rgb(0, 81, 85);
@@ -161,7 +156,12 @@ hr{
 
 
 
-.navbar{background-color: #541920!important;}
+.navbar{
+    /* background-color: #541920!important; */
+    background-image: url("img/fondobarra.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 
@@ -175,7 +175,14 @@ hr{
     h2{font-size: 1.2em!important;}
     h3{font-size: 1.5em!important;}
     h5{font-size: 1em!important;}
- 
+
+    .alturasecciones{height: 470px;}
+    .explicacionseccion{padding-top: 6.5em;}
+    .imagenesseccion{
+        padding-top: 3.5em;
+        height: 40%!important;
+        width: auto;
+    }
 }
 
 @media (min-width: 1920px) and (max-width:2048px)
@@ -189,29 +196,43 @@ hr{
     .navbar-brand{width: 30%;}
     .logohori{width: 80%;padding-left: 5em;}
 
-
+    .alturasecciones{height: 450px;}
+    .explicacionseccion{padding-top: 8em;}
+    .imagenesseccion{
+        padding-top: 5em;
+        height: 40%!important;
+        width: auto;
+    }
 }
 
 @media (min-width: 1024px) and (max-width:1920px)
 {
     .navbar{background-color: #541920!important;}
     .navbar-brand{width: 30%;}
-    .logohori{width: 70%;padding-left: 1em;}
+    .logohori{width: 80%;padding-left: 1em;}
 
-    h1{font-size: 2em!important;}
-    h2{font-size: 1.2em!important;}
-    h3{font-size: 1.5em!important;}
-    h5{font-size: 1em!important;}
+    h1{font-size: 1.8em!important;}
+    h2{font-size: 1.1em!important;}
+    h3{font-size: 1.4em!important;}
+    h5{font-size: 0.95em!important;}
+
+    .alturasecciones{height: 450px;}
+    .explicacionseccion{padding-top: 8em;}
+    .imagenesseccion{
+        padding-top: 5em;
+        height: 40%!important;
+        width: auto;
+    }
 
 }
 @media (min-width: 992px) and (max-width:1024px) {
   
     .navbar-brand{width: 30%;}
-    .logohori{width: 100%!important;padding-left: 0em!important;}
+    .logohori{width: 80%!important;padding-left: 1em!important;}
 
-    h1{font-size: 2em!important;}
-    h2{font-size: 1.5em!important;}
-    h3{font-size: 1.2em!important;}
+    h1{font-size: 1.8em!important;}
+    h2{font-size: 1.3em!important;}
+    h3{font-size: 1.1em!important;}
     h5{font-size: 0.85em!important;}
 
     .imagenesseccion{
@@ -219,11 +240,13 @@ hr{
         width: auto;
     }
     
-    .explicacionseccion{
+    .alturasecciones{height: 450px;}
+    .explicacionseccion{padding-top: 5em;}
+    .imagenesseccion{
         padding-top: 4em;
+        height: 40%!important;
+        width: auto;
     }
-
-  
 }
 
 @media (min-width: 720px) and (max-width:991px) {
@@ -241,8 +264,12 @@ hr{
         width: auto;
     }
     
-    .explicacionseccion{
-        padding-top: 3em;
+    .alturasecciones{height: 450px;}
+    .explicacionseccion{padding-top: 5em;}
+    .imagenesseccion{
+        padding-top: 4em;
+        height: 40%!important;
+        width: auto;
     }
 
 
@@ -254,17 +281,21 @@ hr{
     .navbar-brand{width: 30%;}
     .logohori{width: 100%;padding-left: 0em;}
 
-    h1{font-size: 1.5em!important;}
-    h2{font-size: 1.5em!important;}
-    h3{font-size: 1.3em!important;}
-    h5{font-size: 0.95em!important;}
+    h1{font-size: 1.4em!important;}
+    h2{font-size: 1.1em!important;}
+    h3{font-size: 1em!important;}
+    h5{font-size: 0.90em!important;}
     .imagenesseccion{
         height: 35%!important;
         width: auto;
     }
     
-    .explicacionseccion{
-        padding-top: 2em;
+    .alturasecciones{height: 470px;}
+    .explicacionseccion{padding-top: 3em;}
+    .imagenesseccion{
+        padding-top: 2.5em;
+        height: 40%!important;
+        width: auto;
     }
 
 }
@@ -274,32 +305,37 @@ hr{
     .navbar-brand{width: 30%;}
     .logohori{width: 100%;padding-left: 0em;}
 
-    h1{font-size: 2em!important;}
-    h2{font-size: 1.7em!important;}
-    h3{font-size: 1.5em!important;}
-    h5{font-size: 1.5em!important;}
+    h1{font-size: 1.4em!important;}
+    h2{font-size: 1.3em!important;}
+    h3{font-size: 1.1em!important;}
+    h5{font-size: 1em!important;}
 
     .imagenesseccion{
         height: 35%!important;
         width: auto;
     }
-    
-    .explicacionseccion{
-        padding-top: 2em;
-    }
     .estitubar{
         color: black!important;
     }
+
+    .alturasecciones{height: 490px;}
+    .explicacionseccion{padding-top: 4.5em;}
+    .imagenesseccion{
+        padding-top: 3.5em;
+        height: 40%!important;
+        width: auto;
+    }
+   
 }
 
 @media (min-width: 375px) and (max-width:576px) {
    
     .alturasecciones{
         height: 320px;
-    
+        padding: 0 2em 0 2em;
     }
     .navbar-brand{width: 30%;}
-    .logohori{width: 100%;padding-left: 0em;
+    .logohori{width: 150%;padding-left: 0em;
     
     }
 
@@ -312,12 +348,16 @@ hr{
         width: auto;
     }
     
-    .explicacionseccion{
-        padding-top: 0em;
-        margin: 2em;
-    }
     .columna{
         display: none;
+    }
+    
+    .alturasecciones{height: 400px;}
+    .explicacionseccion{padding-top: 4.5em;}
+    .imagenesseccion{
+        padding-top: 3.5em;
+        height: 40%!important;
+        width: auto;
     }
 
 
@@ -327,7 +367,7 @@ hr{
     
     .alturasecciones{
         height: 350px;
-    
+        padding: 0 2em 0 2em;
     }
     .navbar-brand{width: 30%;}
     .logohori{width: 150%;padding-left: 0em!important;
@@ -343,13 +383,19 @@ hr{
         width: auto;
     }
     
-    .explicacionseccion{
-        padding-top: 0em;
-        margin: 2em;
-    }
     .columna{
         display: none;
     }
+
+    .alturasecciones{height: 400px;}
+    .explicacionseccion{padding-top: 4.5em;}
+    .imagenesseccion{
+        padding-top: 3.5em;
+        height: 40%!important;
+        width: auto;
+    }
+
+    
 
 }
 
