@@ -157,7 +157,11 @@ function ResetTamanio()
   const botonico  = document.getElementById("botonico");
 
   function AlturaBarra(){
-    return altura = barranav.offsetHeight * -1;
+    if(screen.width<992)
+      altura = 0;
+    else
+      altura = barranav.offsetHeight * -1;
+    return  altura;
   }
 
   if(screen.width > 991)
