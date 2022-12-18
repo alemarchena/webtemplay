@@ -157,7 +157,7 @@ hr{
 
 
 .navbar{
-    /* background-color: #541920!important; */
+    /* background-color: #050126!important; */
     background-image: url("img/fondobarra.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -167,7 +167,7 @@ hr{
 
 @media (min-width: 2048px) and (max-width:3840px)
 {
-    .navbar{background-color: #541920!important;}
+    .navbar{background-color: #050126!important;}
     .navbar-brand{width: 30%;}
     .logohori{width: 70%;padding-left: 5em;}
 
@@ -192,7 +192,7 @@ hr{
     h3{font-size: 1.5em!important;}
     h5{font-size: 1em!important;}
 
-    .navbar{background-color: #541920!important;}
+    .navbar{background-color: #050126!important;}
     .navbar-brand{width: 30%;}
     .logohori{width: 80%;padding-left: 5em;}
 
@@ -207,7 +207,7 @@ hr{
 
 @media (min-width: 1024px) and (max-width:1920px)
 {
-    .navbar{background-color: #541920!important;}
+    .navbar{background-color: #050126!important;}
     .navbar-brand{width: 30%;}
     .logohori{width: 80%;padding-left: 1em;}
 
