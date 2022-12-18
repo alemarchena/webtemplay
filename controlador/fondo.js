@@ -9,34 +9,34 @@ const imacapa=document.getElementById("imacapa");
 const imavideoj=document.getElementById("imavideoj");
 
 function ResetImagenes(){
-    logohori.src = "./img/icotemplay.png";
-    imahost.src = "./img/Hosting.png";
-    imaprogra.src = "./img/Programacion.png";
-    imadise.src = "./img/Design.png";
-    imaweb.src = "./img/Web.png";
-    imacapa.src = "./img/Capacitacion.png";
-    imavideoj.src = "./img/Videojuego.png";
+    logohori.src = "./img/icotemplay.png?z="+version;
+    imahost.src = "./img/Hosting.png?z="+version;
+    imaprogra.src = "./img/Programacion.png?z="+version;
+    imadise.src = "./img/Design.png?z="+version;
+    imaweb.src = "./img/Web.png?z="+version;
+    imacapa.src = "./img/Capacitacion.png?z="+version;
+    imavideoj.src = "./img/Videojuego.png?z="+version;
 }
 
 
 
-logohori.addEventListener('mouseover',function() {ResetImagenes();logohori.src = "img/icotemplay_iluminado.png";},false);
+logohori.addEventListener('mouseover',function() {ResetImagenes();logohori.src = "img/icotemplay_iluminado.png?z="+version;},false);
 logohori.addEventListener('mouseout',function() {ResetImagenes();},false);
 
-imahost.addEventListener('mouseover',function() {ResetImagenes();imahost.src = "img/_Hosting.png";},false);
+imahost.addEventListener('mouseover',function() {ResetImagenes();imahost.src = "img/_Hosting.png?z="+version;},false);
 imahost.addEventListener('mouseout',function() {ResetImagenes();},false);
 
-imaprogra.addEventListener('mouseover',function() {ResetImagenes();imaprogra.src = "img/_Programacion.png";},false);
+imaprogra.addEventListener('mouseover',function() {ResetImagenes();imaprogra.src = "img/_Programacion.png?z="+version;},false);
 imaprogra.addEventListener('mouseout',function() {ResetImagenes();},false);
 
-imadise.addEventListener('mouseover',function() {ResetImagenes();imadise.src = "img/_Design.png";},false);
+imadise.addEventListener('mouseover',function() {ResetImagenes();imadise.src = "img/_Design.png?z="+version;},false);
 imadise.addEventListener('mouseout',function() {ResetImagenes();},false);
 
-imaweb.addEventListener('mouseover',function() {ResetImagenes();imaweb.src = "img/_Web.png";},false);
+imaweb.addEventListener('mouseover',function() {ResetImagenes();imaweb.src = "img/_Web.png?z="+version;},false);
 imaweb.addEventListener('mouseout',function() {ResetImagenes();},false);
 
-imacapa.addEventListener('mouseover',function() {ResetImagenes();imacapa.src = "img/_Capacitacion.png";},false);
+imacapa.addEventListener('mouseover',function() {ResetImagenes();imacapa.src = "img/_Capacitacion.png?z="+version;},false);
 imacapa.addEventListener('mouseout',function() {ResetImagenes();},false);
 
-imavideoj.addEventListener('mouseover',function() {ResetImagenes();imavideoj.src = "img/_Videojuego.png";},false);
+imavideoj.addEventListener('mouseover',function() {ResetImagenes();imavideoj.src = "img/_Videojuego.png?z="+version;},false);
 imavideoj.addEventListener('mouseout',function() {ResetImagenes();},false);
