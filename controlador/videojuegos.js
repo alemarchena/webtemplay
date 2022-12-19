@@ -5,7 +5,7 @@ const videoj = document.getElementById("videoj");
 const imagenvj = document.getElementById('imagenvj');
 const imvj = document.getElementById('imvj');
 const seccionvj = document.getElementById('seccionvj');
-let imagen = 'img/videojuegos.jpg?z=`${version}`';
+let imagen = 'img/videojuegos.jpg?z='+ version;
 
 videojuegos.addEventListener('mouseover',function() { resetcolor();  cambiaColor('videoj');},false);
   
