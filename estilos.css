@@ -93,33 +93,34 @@ hr{
 
 
 .imagenesseccion{
-    height: 50%;
-    width: auto;
 
-    animation: efectorotar ease 2s infinite;
-    -webkit-animation: efectorotar ease 2s infinite;
-    -moz-animation: efectorotar ease 2s infinite;
-    -o-animation: efectorotar ease 2s infinite;
-    -ms-animation: efectorotar ease 2s infinite;
+    height: 45%!important;
+    width: auto!important;
+
+    animation: efectorotar ease 2s infinite!important;
+    -webkit-animation: efectorotar ease 2s infinite!important;
+    -moz-animation: efectorotar ease 2s infinite!important;
+    -o-animation: efectorotar ease 2s infinite!important;
+    -ms-animation: efectorotar ease 2s infinite!important;
+
 }
 
 .imagenesseccion:hover{
-    
-    animation-play-state: paused;
+    animation-play-state: paused!important;
 }
 /* ------------------- Efecto de imagenes -------------------------- */
 
 @keyframes efectorotar{
 
-    0% {height: 50%;}
-    50%{height: 48%;}
-    100% {height: 50%;}
+    0% {scale:1;}
+    50%{scale:1.1;}
+    100% {scale:1;}
 }
 
 @-webkit-keyframes efectorotar{
-    0% {height: 50%;}
-    50%{height: 40%;}
-    100% {height: 50%;}
+    0% {scale:1;}
+    50%{scale:1.1;}
+    100% {scale:1;}
 }
 
 
@@ -185,6 +186,7 @@ hr{
         height: 40%!important;
         width: auto;
     }
+    
 }
 
 @media (min-width: 1920px) and (max-width:2048px)
@@ -237,11 +239,6 @@ hr{
     h3{font-size: 1.1em!important;}
     h5{font-size: 0.85em!important;}
 
-    .imagenesseccion{
-        height: 40%!important;
-        width: auto;
-    }
-    
     .alturasecciones{height: 450px;}
     .explicacionseccion{padding-top: 5em;}
     .imagenesseccion{
@@ -261,11 +258,6 @@ hr{
     h3{font-size: 1.2em!important;}
     h5{font-size: 0.95em!important;}
 
-    .imagenesseccion{
-        height: 20%;
-        width: auto;
-    }
-    
     .alturasecciones{height: 450px;}
     .explicacionseccion{padding-top: 5em;}
     .imagenesseccion{
@@ -287,11 +279,7 @@ hr{
     h2{font-size: 1.1em!important;}
     h3{font-size: 1em!important;}
     h5{font-size: 0.90em!important;}
-    .imagenesseccion{
-        height: 35%!important;
-        width: auto;
-    }
-    
+  
     .alturasecciones{height: 470px;}
     .explicacionseccion{padding-top: 3em;}
     .imagenesseccion{
@@ -312,10 +300,6 @@ hr{
     h3{font-size: 1.1em!important;}
     h5{font-size: 1em!important;}
 
-    .imagenesseccion{
-        height: 35%!important;
-        width: auto;
-    }
     .estitubar{
         color: black!important;
     }
@@ -345,11 +329,6 @@ hr{
     h2{font-size: 1.5em!important;}
     h3{font-size: 1.3em!important;}
 
-    .imagenesseccion{
-        height: 35%;
-        width: auto;
-    }
-    
     .columna{
         display: none;
     }
@@ -380,10 +359,7 @@ hr{
     h2{font-size: 1.5em!important;}
     h3{font-size: 1.3em!important;}
 
-    .imagenesseccion{
-        height: 35%;
-        width: auto;
-    }
+    
     
     .columna{
         display: none;
